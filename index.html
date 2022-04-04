@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>safe-content</title>
+</head>
+
+<body onload="init()">
+    <div>
+        <img class="img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2WRKqBbOZCRv6EmPJ0SbbT1m1GcbrJpuqzg&usqp=CAU">
+        <section class="login">
+            <h1 class="user-content"></h1>
+            <form onsubmit="onLogin(event)">
+                <h3>Username</h3>
+                <input class="login-input" type="text" name="username" autocomplete="off" placeholder="Enter Username">
+                <h3>Password</h3>
+                <input class="login-input" type="password" name="password" autocomplete="off"
+                    placeholder="Enter Password"><br>
+                <input class="password-input" type="checkbox"> Show Password
+                <button class="btn login-btn">Login</button>
+        </section>
+    </div>
+
+    <script src="js/user.service.js"></script>
+    <script src="js/storage.service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
